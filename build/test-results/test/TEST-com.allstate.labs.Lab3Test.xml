@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.allstate.labs.Lab3Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T06:19:29" hostname="Nathans-MacBook-Pro.local" time="0.045">
-  <properties/>
-  <testcase name="leapYearTest_shouldReturnFalse()" classname="com.allstate.labs.Lab3Test" time="0.045"/>
-  <system-out><![CDATA[false
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

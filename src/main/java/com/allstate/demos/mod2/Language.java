@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Language {
 
-    public void variableDemo() {
+    public int variableDemo() {
         int x = 100;
         float y = 10.2f;
-        System.out.println(x);
+        return x;
     }
 
     public void fileDemo(){
