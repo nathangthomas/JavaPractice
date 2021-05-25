@@ -1,0 +1,12 @@
+Review:
+- Overloading
+- Interfaces vs Abstract Class
+- Constants
+
+Interfaces:
+    - allows you to connect to multiple different dbs.
+    - does not allow you to create methods in the super class that are inherited by other classes
+    - methods can not contain implementation code
+    - classes can inherit from multiple interfaces
+
+Lamdas -> :
