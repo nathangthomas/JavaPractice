@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class EmployeeServiceTest {
     private EmployeeRepo employeeRepo= new EmployeeImplMySql();
     private EmployeeService employeeService= new EmployeeServiceImpl(employeeRepo);
+
     @Test
     public void testFindByIDThrowsException() {
         Exception exception = assertThrows(OutOfRangeException.class, () -> {
