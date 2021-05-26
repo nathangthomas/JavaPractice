@@ -17,6 +17,9 @@ dependencies {
     implementation 'org.mongodb:mongo-java-driver:3.4.1'
     implementation group: 'org.json', name: 'json', version: '20090211'
     implementation "mysql:mysql-connector-java:8.0.15"
+    testImplementation 'org.mockito:mockito-inline:3.7.7'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.7.7'
+    implementation 'org.hamcrest:hamcrest:2.2'
 }
 
 test {

@@ -2,20 +2,27 @@ package com.allstate.entities;
 
 public class Employee  extends Person{
 
-    private double salary;
-
-    public Employee(){
+    public Employee() {
         this.salary = 0;
     }
 
-    public Employee(double salary) {
-        this.salary = salary;
-    }
 
     public Employee(String name, int id, double salary) {
         this.setId(id);
         this.setName(name);
-        this.setSalary(salary);
+        this.salary = salary;
+    }
+
+    public Employee(String name, int id, double salary, String address) {
+        this.setId(id);
+        this.setName(name);
+        this.salary = salary;
+        this.setAddress(address);
+    }
+
+
+    public Employee(double salary) {
+        this.salary = salary;
     }
 
     public double getSalary() {
@@ -26,8 +33,9 @@ public class Employee  extends Person{
         this.salary = salary;
     }
 
-    public void incrementSalary(double salary){
-        this.salary += salary;
+    private double salary;
+    public void incrementSalary(double salary) {
+        this.salary+=salary;
     }
 
     @Override
@@ -36,5 +44,4 @@ public class Employee  extends Person{
                 "salary=" + salary +
                 '}';
     }
-
 }

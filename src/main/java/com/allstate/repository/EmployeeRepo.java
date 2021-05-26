@@ -9,7 +9,10 @@ public interface EmployeeRepo {
     int update(Employee employee);
 
     Employee findById(int id);
+
     List<Employee> findAll();
     List<Employee> findByAddress(String address);
+
+    boolean isConnected();
 
 }
