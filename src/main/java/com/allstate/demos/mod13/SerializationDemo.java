@@ -26,4 +26,18 @@ public class SerializationDemo {
         }
     }
 
+    private static Employee deserialize() {
+        Employee employee = null;
+        try {
+            FileInputStream   fs = new FileInputStream("employee.ser");
+            ObjectInputStream is = new ObjectInputStream(fs);
+            employee = (Employee) is.readObject();
+            is.close();
+            fs.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return employee;
+    }
+
 }
